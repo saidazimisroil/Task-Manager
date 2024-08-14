@@ -9,6 +9,10 @@
 <body>
   <h1>@yield('title')</h1>
 
+  @if ( session()->has('success'))
+    <p><b>{{ session('success') }}</b></p>
+  @endif
+
   <div>@yield('content')</div>
 </body>
 </html>
