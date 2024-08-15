@@ -3,7 +3,7 @@
 @section('title', 'List of Tasks')
     
 @section('content')
-  <a href="{{ route('tasks.create') }}">Edit Task</a>
+  <a href="{{ route('tasks.create') }}">Add Task</a>
 
   <div>
     @forelse ($tasks as $task)
